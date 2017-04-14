@@ -28,3 +28,7 @@
   top: 30%;
   left: 30%;
 }
+
+.out-of-stock {
+  color: red;
+}
