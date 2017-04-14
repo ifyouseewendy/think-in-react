@@ -1,18 +1,39 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {
+  Component
+} from 'react';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className='product'>
+        <div className='search'>
+          <div className='search-input'>
+            <input type='text' placeholder='Search...' />
+          </div>
+          <div className='search-filter'>
+            <input type='checkbox' /><span>Only show products in stock</span>
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className='Display'>
+          <table>
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Price</td>
+              </tr>
+            </thead>
+            <tbody>
+              <th>
+                <td colSpan='2'>Sporting Goods</td>
+              </th>
+              <tr>
+                <td>Football</td>
+                <td>$49.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }
